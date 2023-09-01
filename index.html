@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IpsilonSrbija</title>
+    <meta name="title" content="IpsilonSrbija">
+    <meta name="description" content="This is NGO site made by WLQ and WLQ Innovations">
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/asd.png">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    
+    <!-- custom css -->
+    <link rel="stylesheet" href="require.css">
+
+    <!-- preload images -->
+    <!-- <link rel="preload" as="image" href="...">
+    <link rel="preload" as="image" href="..."> -->
+
+</head>
+<body>
+    
+    <!-- 
+        - HEADER
+     -->
+
+     <header class="header" data-header>
+        <div class="container">
+
+            <a href="" class="logo">
+                <img src="./assets/logo.png" width="120" height="60" alt="IpsilonSrbija" class="logo-light">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <div class="navbar-top">
+                    <a href="#" class="logo">
+                        <img src="./assets/logo_white.png" width="120" height="60" alt="IpsilonSrbija">
+                    </a>
+
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+
+                <ul class="navbar-list">
+                    <li>
+                        <a href="#" class="navbar-link">O nama</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link">Sta radimo</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link">Vesti</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link">Kontakt</a>
+                    </li>
+                </ul>
+
+                <div class="wrapper">
+                    <a href="mailto:ipsilonsrbija@gmail.com" class="contact-link">ipsilonsrbija@gmail.com</a>
+
+                    <a href="tel:064123456789" class="contact-link">06x/1234-56789</a>
+                </div>
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="https://www.instagram.com/ipsilonsrbija" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/ipsilonsrbija" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+            </nav>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+
+     </header>
+
+     <main>
+        <article>
+
+            <!-- 
+                -#HERO section
+             -->
+
+             <main>
+                <article>
+            
+                  <!-- 
+                    - #HERO
+                  -->
+            
+                  <section class="section hero has-bg-image" aria-label="home"
+                    style="background-image: url('./assets/hero-bg.jpg')">
+                    <div class="container">
+            
+                      <div class="hero-content">
+            
+                        <h1 class="h1 hero-title">Crafting project specific solutions with expertise.</h1>
+            
+                        <p class="hero-text">
+                          We’re a creative company that focuses on establishing long-term relationships with customers.
+                        </p>
+            
+                        <div class="btn-wrapper">
+            
+                          <a href="#" class="btn btn-primary">Projekti</a>
+            
+                          <a href="#" class="btn btn-outline">Kontakt</a>
+            
+                        </div>
+            
+                      </div>
+            
+                      <div class="hero-slider" data-slider>
+            
+                        <div class="slider-inner">
+                          <ul class="slider-container" data-slider-container>
+            
+                            <li class="slider-item">
+            
+                              <figure class="img-holder" style="--width: 575; --height: 550;">
+                                <img src="./assets/hero-slide-1.jpg" width="575" height="550" alt="" class="img-cover">
+                              </figure>
+            
+                            </li>
+            
+                            <li class="slider-item">
+            
+                              <div class="hero-card">
+                                <figure class="img-holder" style="--width: 575; --height: 550;">
+                                  <img src="./assets/hero-slide-2.jpg" width="575" height="550" alt="hero banner"
+                                    class="img-cover">
+                                </figure>
+            
+                                <button class="play-btn" aria-label="play adex intro">
+                                  <ion-icon name="play" aria-hidden="true"></ion-icon>
+                                </button>
+                              </div>
+            
+                            </li>
+            
+                            <li class="slider-item">
+            
+                              <figure class="img-holder" style="--width: 575; --height: 550;">
+                                <img src="./assets/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover">
+                              </figure>
+            
+                            </li>
+            
+                          </ul>
+                        </div>
+            
+                        <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+                          <ion-icon name="arrow-back"></ion-icon>
+                        </button>
+            
+                        <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+                          <ion-icon name="arrow-forward"></ion-icon>
+                        </button>
+            
+                      </div>
+            
+                    </div>
+                  </section>
+            
+        </article>
+     </main>
+
+ 
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <img src="./assets/logo_white.png" width="120" height="60" alt="IpsilonSrbija">
+        </a>
+
+        <p class="footer-text">
+          &copy; 2022 WLQ Innovations. <br> All rights reserved.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/ipsilonsrbija" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/ipsilonsrbija" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Kontaktirajte nas</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Sarajevska 38, Beograd, Srbija
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:ipsilonsrbija@gmail.com" class="footer-link">ipsilonsrbija@gmail.com</a>
+        </li>
+
+        <li>
+          <a href="tel:001234567890" class="footer-link">00 (123) 456 78 90</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Saznaj više</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">O nama</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Projekti</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Uslovi korišćenja</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Politika privatnosti</a>
+        </li>
+
+      </ul>
+
+      <div class="footer-list">
+
+        <p class="h4 footer-list-title">Naš bilten</p>
+
+        <p class="footer-text">
+          Pretplatite se na naš bilten kako biste primili naše vesti i ponude.
+        </p>
+
+        <form action="" class="input-wrapper">
+          <input type="email" name="email_address" placeholder="Email Adresa" required class="input-field">
+
+          <button type="submit" class="submit-btn">Pošalji</button>
+        </form>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+    <!-- custom js link -->
+    <script src="./code.js"></script>
+
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
