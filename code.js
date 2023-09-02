@@ -42,8 +42,10 @@ const header = document.querySelector("[data-header]");
 window.addEventListener("scroll", function () {
   if (window.scrollY > 100) {
     header.classList.add("active");
+    document.getElementById('logo-heder').src="./assets/logo.png"
   } else {
     header.classList.remove("active");
+    document.getElementById('logo-heder').src="./assets/logo_white.png"
   }
 });
 
