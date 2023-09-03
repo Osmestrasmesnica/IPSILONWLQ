@@ -552,6 +552,19 @@ body.nav-active {overflow: hidden;}
 
 .service-card .btn-text:is(:hover, :focus-visible) { opacity: 0.9; }
 
+/* CSS for text expansion */
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show initially */
+  -webkit-box-orient: vertical;
+}
+
+.card-text.expanded {
+  -webkit-line-clamp: unset; /* Show all lines when expanded */
+  overflow: unset;
+}
 
 /*-----------------------------------*\
   #FOOTER

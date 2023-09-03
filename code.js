@@ -143,3 +143,42 @@ const initAccordion = function (currentAccordion) {
 }
 
 for (let i = 0, len = accordions.length; i < len; i++) { initAccordion(accordions[i]); }
+
+// JavaScript to toggle text expansion and show/hide "Saznajte više" button
+const expandLinks = document.querySelectorAll('.service-card .btn-text');
+
+for (let i = 0; i < expandLinks.length; i++) {
+  const expandLink = expandLinks[i];
+  const cardText = expandLink.parentElement.querySelector('.card-text');
+
+  // Function to check if the button should be shown or hidden
+  function toggleButtonVisibility() {
+    if (cardText.scrollHeight > cardText.clientHeight && window.innerWidth >= 768) {
+      expandLink.style.display = 'flex'; // Show the "Saznajte više" button
+    } else {
+      expandLink.style.display = 'none'; // Hide the "Saznajte više" button
+    }
+  }
+
+  // Initially, check the visibility of the button
+  toggleButtonVisibility();
+
+  // Attach click event listener
+  expandLink.addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent the link from navigating
+
+    cardText.classList.toggle('expanded');
+
+    // Toggle the text and button display
+    if (cardText.classList.contains('expanded')) {
+      expandLink.querySelector('.span').textContent = 'Manje';
+    } else {
+      expandLink.querySelector('.span').textContent = 'Saznajte više';
+    }
+  });
+
+  // Attach resize event listener to dynamically show/hide the button
+  window.addEventListener('resize', toggleButtonVisibility);
+}
+
+
