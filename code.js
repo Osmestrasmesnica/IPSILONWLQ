@@ -145,7 +145,7 @@ const initAccordion = function (currentAccordion) {
 for (let i = 0, len = accordions.length; i < len; i++) { initAccordion(accordions[i]); }
 
 // JavaScript to toggle text expansion and show/hide "Saznajte više" button
-const expandLinks = document.querySelectorAll('.service-card .btn-text');
+const expandLinks = document.querySelectorAll('.btn-text');
 
 for (let i = 0; i < expandLinks.length; i++) {
   const expandLink = expandLinks[i];
