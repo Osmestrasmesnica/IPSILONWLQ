@@ -153,7 +153,7 @@ for (let i = 0; i < expandLinks.length; i++) {
 
   // Function to check if the button should be shown or hidden
   function toggleButtonVisibility() {
-    if (cardText.scrollHeight > cardText.clientHeight && window.innerWidth >= 768) {
+    if (cardText.scrollHeight > cardText.clientHeight) {
       expandLink.style.display = 'flex'; // Show the "Saznajte više" button
     } else {
       expandLink.style.display = 'none'; // Hide the "Saznajte više" button
@@ -180,6 +180,7 @@ for (let i = 0; i < expandLinks.length; i++) {
   // Attach resize event listener to dynamically show/hide the button
   window.addEventListener('resize', toggleButtonVisibility);
 }
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
