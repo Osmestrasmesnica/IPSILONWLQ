@@ -182,3 +182,25 @@ for (let i = 0; i < expandLinks.length; i++) {
 }
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Pronađite sve linkove u navbaru
+    var navbarLinks = document.querySelectorAll(".navbar-link");
+
+    // Dodajte događaj za svaku stavku u navbaru
+    navbarLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Odbijte podrazumevano ponašanje klika
+
+            // Dobijte ciljani ID iz atributa href linka
+            var targetId = link.getAttribute("href").substring(1);
+
+            // Pronađite ciljani element po ID-ju
+            var targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                // Skrolujte do ciljanog elementa
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
+});
