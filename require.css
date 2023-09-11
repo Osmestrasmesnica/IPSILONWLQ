@@ -1082,8 +1082,6 @@ body.nav-active {overflow: hidden;}
 
   .project .grid-list { grid-template-columns: repeat(3, 1fr); }
 
-
-
   /**
    * FOOTER
    */
