@@ -1,732 +1,772 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IpsilonSrbija</title>
-    <meta name="title" content="IpsilonSrbija">
-    <meta name="description" content="This is NGO site made by WLQ and WLQ Innovations">
-    
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/asd.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IpsilonSrbija</title>
+  <meta name="title" content="IpsilonSrbija" />
+  <meta name="description" content="This is NGO site made by WLQ and WLQ Innovations" />
 
-    <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
-    
-    <!-- custom css -->
-    <link rel="stylesheet" href="require.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/asd.png" />
 
-    <!-- preload images -->
-    <!-- <link rel="preload" as="image" href="...">
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="require.css" />
+
+  <!-- preload images -->
+  <!-- <link rel="preload" as="image" href="...">
     <link rel="preload" as="image" href="..."> -->
-
 </head>
+
 <body>
-    
-    <!-- 
-        - HEADER
+  <!-- 
+    - #HEADER
      -->
 
-     <header class="header" data-header>
-        <div class="container">
+  <header class="header" data-header>
+    <div class="container">
+      <a href="" class="logo">
+        <img src="./assets/logo_white.png" width="120" height="60" alt="IpsilonSrbija" class="logo-light"
+          id="logo-heder" />
+      </a>
 
-            <a href="" class="logo">
-                <img src="./assets/logo_white.png" width="120" height="60" alt="IpsilonSrbija" class="logo-light" id="logo-heder">
-            </a>
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/logo_white.png" width="120" height="60" alt="IpsilonSrbija" />
+          </a>
 
-            <nav class="navbar" data-navbar>
-                <div class="navbar-top">
-                    <a href="#" class="logo">
-                        <img src="./assets/logo_white.png" width="120" height="60" alt="IpsilonSrbija">
-                    </a>
-
-                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-                    </button>
-                </div>
-
-
-                <ul class="navbar-list">
-                    <li>
-                        <a href="#about-section" class="navbar-link">O nama</a>
-                    </li>
-                    <li>
-                        <a href="#service-section" class="navbar-link">Sta radimo</a>
-                    </li>
-                    <li>
-                        <a href="#project-section" class="navbar-link">Projekti</a>
-                    </li>
-                    <li>
-                        <a href="#social-section" class="navbar-link">Vesti/Blog?</a>
-                    </li>
-                    <li>
-                        <a href="#contact-section" class="navbar-link">Kontakt</a>
-                    </li>
-                </ul>
-
-                <div class="wrapper">
-                    <a href="mailto:ipsilonsrbija@gmail.com" class="contact-link">ipsilonsrbija@gmail.com</a>
-
-                    <!-- <a href="tel:064123456789" class="contact-link">06x/1234-56789</a> -->
-                </div>
-
-                <ul class="social-list">
-
-                    <li>
-                        <a href="https://www.instagram.com/ipsilonsrbija" class="social-link">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/ipsilonsrbija" class="social-link">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                    </li>
-
-                </ul>
-
-
-            </nav>
-
-            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-            </button>
-
-            <div class="overlay" data-nav-toggler data-overlay></div>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
         </div>
 
-     </header>
+        <ul class="navbar-list">
+          <li>
+            <a href="#about-section" class="navbar-link">O nama</a>
+          </li>
+          <li>
+            <a href="#service-section" class="navbar-link">Sta radimo</a>
+          </li>
+          <li>
+            <a href="#project-section" class="navbar-link">Projekti</a>
+          </li>
+          <li>
+            <a href="#contact-section" class="navbar-link">Kontakt</a>
+          </li>
+          <li>
+            <a href="#social-section" class="navbar-link">Vesti/Blog?</a>
+          </li>
+        </ul>
 
-     <main>
-        <article>           
-                  <!-- 
-                    - #HERO
-                  -->
-            
-                  <section class="section hero has-bg-image" aria-label="home"
-                    style="background-image: url('./assets/hero-bg.jpg')">
-                    <div class="container">
-            
-                      <div class="hero-content">
-            
-                        <h1 class="h1 hero-title">
-                          Zajedno gradimo svetlu budućnosti
-                        </h1>
-                        
-                        
-            
-                        <p class="hero-text">
-                          Kroz zajednički inspiraciju, trud i rad, stvaramo svetlu budućnost.
-                        </p>
-            
-                        <div class="btn-wrapper">
-            
-                          <a href="#project-section" class="btn btn-primary">Projekti</a>
-            
-                          <a href="#" class="btn btn-outline">Kontakt</a>
-            
-                        </div>
-            
-                      </div>
-            
-                      <div class="hero-slider" data-slider>
-            
-                        <div class="slider-inner">
-                          <ul class="slider-container" data-slider-container>
-            
-                            <li class="slider-item">
-            
-                              <figure class="img-holder" style="--width: 575; --height: 550;">
-                                <img src="./assets/hero-slide-1.jpg" width="575" height="550" alt="" class="img-cover">
-                              </figure>
-            
-                            </li>
-            
-                            <li class="slider-item">
-            
-                              <div class="hero-card">
-                                <figure class="img-holder" style="--width: 575; --height: 550;">
-                                  <img src="./assets/hero-slide-2.jpg" width="575" height="550" alt="hero banner"
-                                    class="img-cover">
-                                </figure>
-            
-                                <button class="play-btn" aria-label="play adex intro">
-                                  <ion-icon name="play" aria-hidden="true"></ion-icon>
-                                </button>
-                              </div>
-            
-                            </li>
-            
-                            <li class="slider-item">
-            
-                              <figure class="img-holder" style="--width: 575; --height: 550;">
-                                <img src="./assets/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover">
-                              </figure>
-            
-                            </li>
-            
-                          </ul>
-                        </div>
-            
-                        <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
-                          <ion-icon name="arrow-back"></ion-icon>
-                        </button>
-            
-                        <button class="slider-btn next" aria-label="slide to next" data-slider-next>
-                          <ion-icon name="arrow-forward"></ion-icon>
-                        </button>
-            
-                      </div>
-            
-                    </div>
-                  </section>
-                  
-                <!-- 
-                  - #ABOUT
-                -->
+        <div class="wrapper">
+          <a href="mailto:ipsilonsrbija@gmail.com" class="contact-link">ipsilonsrbija@gmail.com</a>
+          <!-- <a href="tel:064123456789" class="contact-link">06x/1234-56789</a> -->
+        </div>
 
-                <section class="about" aria-labelledby="about-label" id="about-section">
-                  <div class="container">
+        <ul class="social-list">
+          <li>
+            <a href="https://www.instagram.com/ipsilonsrbija" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/ipsilonsrbija" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-                    <figure class="about-banner">
-                      <img src="./assets/about-banner.png" width="800" height="580" loading="lazy" alt="about banner"
-                        class="w-100">
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- 
+        - #HERO
+        -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/hero-bg.jpg')">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="h1 hero-title">Zajedno gradimo svetlu budućnosti</h1>
+
+            <p class="hero-text">
+              Kroz zajednički inspiraciju, trud i rad, stvaramo svetlu
+              budućnost.
+            </p>
+
+            <div class="btn-wrapper">
+              <a href="#project-section" class="btn btn-primary">Projekti</a>
+
+              <a href="#" class="btn btn-outline">Kontakt</a>
+            </div>
+          </div>
+
+          <div class="hero-slider" data-slider>
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+
+                <li class="slider-item">
+                  <figure class="img-holder" style="--width: 575; --height: 550">
+                    <img src="./assets/hero-slide-4.jpg" width="575" height="550" alt="" class="img-cover hero-picture" />
+                  </figure>
+                </li>
+
+                <li class="slider-item">
+                  <figure class="img-holder" style="--width: 575; --height: 550">
+                    <img src="./assets/hero-slide-5.jpg" width="575" height="550" alt="" class="img-cover hero-picture" />
+                  </figure>
+                </li>     
+                
+                <li class="slider-item">
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550">
+                      <img src="./assets/hero-slide-2.jpg" width="575" height="550" alt="hero banner"
+                        class="img-cover hero-picture" />
                     </figure>
 
-                    <div class="about-content">
-
-                      <p class="section-subtitle" id="about-label">O nama</p>
-
-                      <h2 class="h2 section-title">
-                        Ipsilon Srbija - Zajedno ka boljoj budućnosti.
-                      </h2>
-
-
-                      <ul>
-
-                        <li class="about-item">
-                          <div class="accordion-card expanded" data-accordion>
-
-                            <h3 class="card-title">
-                              <button class="accordion-btn" data-accordion-btn>
-                                <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-
-                                <spna class="span h5">Osnovna Ideja</spna>
-                              </button>
-                            </h3>
-
-                            <p class="accordion-content">
-                              Ipsilon Srbija je osnovana iz osnovne ideje da male promene mogu napraviti veliku razliku u našoj zajednici. Verujemo u moć edukacije i ličnog razvoja kao sredstva za ostvarivanje te promene.
-                            </p>
-
-                          </div>
-                        </li>
-
-                        <li class="about-item">
-                          <div class="accordion-card" data-accordion>
-
-                            <h3 class="card-title">
-                              <button class="accordion-btn" data-accordion-btn>
-                                <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-
-                                <spna class="span h5">Naša Misija</spna>
-                              </button>
-                            </h3>
-
-                            <p class="accordion-content">
-                              Misija Ipsilon Srbija je podržati i edukovati svoje članove u svim aspektima ličnog razvoja. Verujemo da samo zajedno, kroz zajedničke napore, možemo stvoriti bolje i pravednije društvo.
-                            </p>
-
-                          </div>
-                        </li>
-
-                        <li class="about-item">
-                          <div class="accordion-card" data-accordion>
-
-                            <h3 class="card-title">
-                              <button class="accordion-btn" data-accordion-btn>
-                                <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-
-                                <spna class="span h5">Naša Vizija</spna>
-                              </button>
-                            </h3>
-
-                            <p class="accordion-content">
-                              Ipsilon Srbija ima viziju stvaranja otvorenijeg i pravednijeg društva kroz podršku građanima i promovisanje pozitivnih promena. Smatramo da je svaka akcija važna u ostvarivanju te vizije.
-                            </p>
-
-                          </div>
-                        </li>
-
-                        <li class="about-item">
-                          <div class="accordion-card" data-accordion>
-                            <h3 class="card-title">
-                              <button class="accordion-btn" data-accordion-btn>
-                                <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-                                <span class="span h5">Naši Ciljevi</span>
-                              </button>
-                            </h3>
-                            <p class="accordion-content">
-                              Glavni cilj Ipsilon Srbija je pružiti podršku građanima u njihovim nastojanjima za pozitivnim promenama. Radimo na promovisanju edukacije, aktivnog građanstva i stvaranju boljeg okruženja za sve.
-                            </p>
-                          </div>
-                        </li>
-                        
-                        <li class="about-item">
-                          <div class="accordion-card" data-accordion>
-                            <h3 class="card-title">
-                              <button class="accordion-btn" data-accordion-btn>
-                                <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-                                <span class="span h5">Kako Radimo</span>
-                              </button>
-                            </h3>
-                            <p class="accordion-content">
-                              Radimo zajedno sa našim članovima i partnerima kako bismo ostvarili svoje ciljeve. Organizujemo obuke, seminare i događaje kako bismo pružili prilike za učenje i saradnju.
-                            </p>
-                          </div>
-                        </li>
-                        
-                        <li class="about-item">
-                          <div class="accordion-card" data-accordion>
-                            <h3 class="card-title">
-                              <button class="accordion-btn" data-accordion-btn>
-                                <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-                                <span class="span h5">Zajednica</span>
-                              </button>
-                            </h3>
-                            <p class="accordion-content">
-                              Ipsilon Srbija je zajednica entuzijasta i pojedinaca koji dele istu strast za promenama. Verujemo da svaka osoba može doprineti boljoj budućnosti i otvorenijem društvu.
-                            </p>
-                          </div>
-                        </li>                        
-
-                      </ul>
-
-                    </div>
-
+                    <button class="play-btn" aria-label="play adex intro">
+                      <ion-icon name="play" aria-hidden="true"></ion-icon>
+                    </button>
                   </div>
-                </section>
-
-                <!-- 
-                  - #SERVICE
-                -->
-          
-                <section class="section service" aria-labelledby="service-label" id="service-section">
-                  <div class="container">
-          
-                    <p class="section-subtitle" id="service-label">Koji je naš doprinos zajednici?</p>
-          
-                    <h2 class="h2 section-title">
-                      Mi smo Ipsilon Srbija, posvećeni unapređenju zajednice kroz obrazovanje i angažovanje građana.
-                    </h2>
-          
-                    <ul class="grid-list">
-          
-                      <li>
-                        <div class="service-card">
-          
-                          <div class="card-icon">
-                            <ion-icon name="book-outline" aria-hidden="true"></ion-icon>
-                          </div>
-          
-                          <h3 class="h4 card-title">Edukacija za lični razvoj i uspeh</h3>
-          
-                          <p class="card-text">
-                            Nudimo obrazovanje koje vam pomaže u postizanju ličnog razvoja i uspeha. Saznajte više o našim programima.
-                          </p>
-          
-                          <a href="#" class="btn-text">
-                            <span class="span">Saznajte više</span>
-          
-                            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                          </a>
-          
-                        </div>
-                      </li>
-          
-                      <li>
-                        <div class="service-card">
-          
-                          <div class="card-icon">
-                            <ion-icon name="bulb-outline" aria-hidden="true"></ion-icon>
-                          </div>
-          
-                          <h3 class="h4 card-title">Inspiracija i mentorstvo za mlade</h3>
-          
-                          <p class="card-text">
-                            Naši mentori pružaju inspiraciju i podršku kako mladima tako i iskusnima. Otkrijte kako vam možemo pomoći da ostvarite svoje ciljeve.
-                          </p>
-          
-                          <a href="#" class="btn-text">
-                            <span class="span">Saznajte više</span>
-          
-                            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                          </a>
-          
-                        </div>
-                      </li>
-          
-                      <li>
-                        <div class="service-card">
-          
-                          <div class="card-icon">
-                            <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
-                          </div>
-          
-                          <h3 class="h4 card-title">Povezivanje ljudi za pravedno društvo</h3>
-          
-                          <p class="card-text">
-                            Verujemo da povezivanje ljudi može da dovede do stvaranja pravednijeg društva. Saznajte kako možete biti deo pozitivnih promena.
-                          </p>
-          
-                          <a href="#" class="btn-text">
-                            <span class="span">Saznajte više</span>
-          
-                            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                          </a>
-          
-                        </div>
-                      </li>
-          
-                      <li>
-                        <div class="service-card">
-          
-                          <div class="card-icon">
-                            <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
-                          </div>
-          
-                          <h3 class="h4 card-title">Podrška za pozitivne promene u zajednici</h3>
-          
-                          <p class="card-text">
-                            Naša podrška ima za cilj da doprinese pozitivnim promenama u vašoj zajednici. Saznajte kako možemo zajedno unaprediti život u vašem okruženju.
-                          </p>
-          
-                          <a href="#" class="btn-text">
-                            <span class="span">Saznajte više</span>
-          
-                            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                          </a>
-          
-                        </div>
-                      </li>
-          
-                    </ul>
-          
-                  </div>
-                </section>
-            
-                <!-- 
-                  - #STATS
-                -->
-
-                <section class="stats" aria-label="our stats">
-                  <div class="container">
-
-                    <ul class="stats-card has-bg-image" style="background-image: url('./assets/stats-bg.jpg')">
-
-                      <li>
-                        <p class="card-text">
-                          <span class="h1">25</span>
-
-                          <spna class="span">Realizovani projekti</spna>
-                        </p>
-                      </li>
-
-                      <li>
-                        <p class="card-text">
-                          <span class="h1">3472</span>
-
-                          <spna class="span">Srećnih korisnika</spna>
-                        </p>
-                      </li>
-
-                      <li>
-                        <p class="card-text">
-                          <span class="h1">10</span>
-
-                          <spna class="span">Zaposlenih eksperta</spna>
-                        </p>
-                      </li>
-
-                    </ul>
-
-                  </div>
-                </section>
-
-                         
-                <!-- 
-                  - #PROJECT
-                -->
-
-                <section class="section project" aria-labelledby="project-label" id="project-section">
-                  <div class="container">
-
-                    <p class="section-subtitle" id="project-label">Projekti</p>
-
-                    <h2 class="h2 section-title">
-                      Pogledajte neke naše realizovane projekte
-                    </h2>
-
-                    <ul class="grid-list">
-
-                      <li>
-                                          <div class="project-card">
-
-                                            <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                                              <img src="./assets/2.jpg" width="560" height="350" loading="lazy"
-                                                alt="BEOKULTURA" class="img-cover">
-                                            </figure>
-
-                                            <div class="card-content">
-
-                                              <h3 class="h3">
-                                                <a href="#" class="card-title">BEOKULTURA</a>
-                                              </h3>
-
-                                              <p class="card-text">
-                                                Projekat ima za animiranje   kreativnih   ljudi   i   mladih stvaralaca za rad na razvoju kulture. Sajt afirmiše mlade   stvaraoce   iz   svih   oblasti umetnosti,   koji   do   sada   nisu   imali   šansu   da predstave   svoja   dela   i   radove   svetskoj   javnosti. Projekat omogućava učešće i svim pojedincima koji na bilo koji način žele da  daju  doprinos razvoju kulture u Beogradu. Predstavljanje umetnika i drugih stvaralaca iz Beograda. Preko ovog sajta omogućićemo umetnicimai drugim stvaraocima raznih generacija da predstavesvoje stvaralaštvo putem interneta. To se odnosi nastvaraoce koji vode poreklo sa ovog područja iližive i stvaraju na području Beograda.
-                                              </p>
-
-                                              <a href="#" class="btn-text">
-                                                <span class="span">Saznajte više</span>
-                              
-                                                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                              </a>
-
-                                              <ul class="card-meta-list">
-
-                                                <li class="card-meta-item">
-                                                  <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                                                  <time class="meta-text" datetime="2022-03-29">29 Mar 2022</time>
-                                                </li>
-
-                                                <li class="card-meta-item">
-                                                  <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                                                  <span class="meta-text">Workspace</span>
-                                                </li>
-
-                                              </ul>
-
-                                            </div>
-
-                                          </div>
-                      </li>
-
-                      <li>
-                        <div class="project-card">
-
-                          <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                            <img src="./assets/4.jpg" width="560" height="350" loading="lazy"
-                              alt="Made in СРБИЈА" class="img-cover">
-                          </figure>
-
-                          <div class="card-content">
-
-                            <h3 class="h3">
-                              <a href="#" class="card-title">Made in СРБИЈА</a>
-                            </h3>
-
-                            <p class="card-text">
-                              Ovim projektom se promoviše celokupna i raznovrsna kulturna i umetnička delatnost, kao i njene tradicija i bogato nasljeđa. Promocija ovih sadržaja je u cilju očuvanja kulturne baštine kao prioritetne grane naše zemlje i prepoznavanje Srbije kao destinacije u kojoj su zastupljeni određeni vidovi kulturnog turizma kao oblika koji sedanas sve više traži i po čemu su već prepoznate određene svetske kulturne destinacije. Ovi ciljevi su definisani od samog početka realizacije projekta.                            
-                            </p>
-
-                            <a href="#" class="btn-text">
-                              <span class="span">Saznajte više</span>
-            
-                              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                            </a>
-
-                            <ul class="card-meta-list">
-
-                              <li class="card-meta-item">
-                                <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                                <time class="meta-text" datetime="2022-02-26">26 Feb 2022</time>
-                              </li>
-
-                              <li class="card-meta-item">
-                                <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                                <span class="meta-text">Meeting</span>
-                              </li>
-
-                            </ul>
-
-                          </div>
-
-                        </div>
-                      </li>
-                      
-                      <li>
-                        <div class="project-card">
-
-                          <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                            <img src="./assets/1.jpg" width="560" height="350" loading="lazy"
-                              alt="Aktiviraj se, edukuj se!" class="img-cover">
-                          </figure>
-
-                          <div class="card-content">
-
-                            <h3 class="h3">
-                              <a href="#" class="card-title">Aktiviraj se, edukuj se</a>
-                            </h3>
-
-                            <p class="card-text">
-                              U saradnji sa Kancelarijom za mlade Grada Beograda početkom 2023. godine sproveli smo edukativnu radionicu “Postani vršnjački edukator” iz kojeg je proisteklo Istraživanje ove, danas, jako popularne I aktuelne teme.
-                              <br><br> Sprovođenjem mešovitih kvalitativnih metoda, edukativnih i kreativnih seminara, fokus grupa, konsultacija i dubinskih intervjua ispitivani su stavovi mladih iz srednjih škola i predstavnika lokalnih organizacija i institucija. Na osnovu ovog materijala pripremljene su preporuke za neposrednije uključivanje mladih u rad tela koje se bave prevencijom nasilja u obrazovnim ustanovama na lokalnom nivou i angažovanje odbornika na nivou njihovih izbornih baza.
-
-                              <br><br>Samo istraživanje možete pogledati na linku: 
-                              
-                            </p>
-
-                            <a href="#" class="btn-text">
-                              <span class="span">Saznajte više</span>
-            
-                              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                            </a>
-
-                            <ul class="card-meta-list">
-
-                              <li class="card-meta-item">
-                                <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                                <time class="meta-text" datetime="2022-04-14">14 Apr 2022</time>
-                              </li>
-
-                              <li class="card-meta-item">
-                                <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                                <span class="meta-text">Coding</span>
-                              </li>
-
-                            </ul>
-
-                          </div>
-
-                        </div>
-                      </li>
-
-                      <li>
-                        <div class="project-card">
-
-                          <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                            <img src="./assets/3.jpg" width="560" height="350" loading="lazy"
-                              alt="Edukativna učionica dobre volje" class="img-cover">
-                          </figure>
-
-                          <div class="card-content">
-
-                            <h3 class="h3">
-                              <a href="#" class="card-title">Edukativna učionica dobre volje</a>
-                            </h3>
-
-                            <p class="card-text">
-                              U saradnji sa Sekretarijatom za omladinu i sport Grada Beograda sproveli smo i, i dalje radimo na njemu, projekta pod nazivom „Edukativna učionica dobre volje” koji za glavni cilj ima edukaciju  dece   o  važnosti  aktivizma,  socijalnom  uključivanju, zdravim navikama, kao i jačanju kohezivnosti, stvaranje zdrave atmosfere u kojoj se negujebliskost i saradnja među učenicima bez nasilja,  sačinjene  za  decu  uzrasta od  14  godina,odnosno 80 učenika osnovnih školskih ustanova 8 razreda, kao i srednjoškolcima od 1-4razreda srednjo-školskog uzrasta od 14 -18 godina.
-                            </p>
-
-                            <a href="#" class="btn-text">
-                              <span class="span">Saznajte više</span>
-            
-                              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                            </a>
-
-                            <ul class="card-meta-list">
-
-                              <li class="card-meta-item">
-                                <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                                <time class="meta-text" datetime="2022-02-26">26 Feb 2022</time>
-                              </li>
-
-                              <li class="card-meta-item">
-                                <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                                <span class="meta-text">Meeting</span>
-                              </li>
-
-                            </ul>
-
-                          </div>
-
-                        </div>
-                      </li>
-
-                      <li>
-                        <div class="project-card">
-
-                          <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                            <img src="./assets/5.jpg" width="560" height="350" loading="lazy"
-                              alt="Solidarnost pre svega" class="img-cover">
-                          </figure>
-
-                          <div class="card-content">
-
-                            <h3 class="h3">
-                              <a href="#" class="card-title">Solidarnost pre svega</a>
-                            </h3>
-
-                            <p class="card-text">
-                              Projektom je osmišljeno sprovođenja treninga i radionica sa ciljem osnaživanja mladih da kao ambasadori solidarnosti prenesu stečena znanja svojim vršnjacima, a da zatim volonteri uz podršku omladinskihradnika kreiraju edukativne programe u koje uključuju i druge mlade a sve na temu solidarnosti i pozitivnog stava društva u celini
-                            </p>
-
-                            <a href="#" class="btn-text">
-                              <span class="span">Saznajte više</span>
-            
-                              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                            </a>
-
-                            <ul class="card-meta-list">
-
-                              <li class="card-meta-item">
-                                <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                                <time class="meta-text" datetime="2022-02-26">26 Feb 2022</time>
-                              </li>
-
-                              <li class="card-meta-item">
-                                <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                                <span class="meta-text">Meeting</span>
-                              </li>
-
-                            </ul>
-
-                          </div>
-
-                        </div>
-                      </li>
-
-                    </ul>
-
-                  </div>
-                </section>
-
-                       
-                <!-- 
-                  - #CTA
-                -->
-
-                <section class="cta" aria-label="call to action">
-                  <div class="container">
-
-                    <h2 class="h2 section-title">
-                      Postanite deo Ipsilon tima
-                    </h2>
-
-                    <a href="#" class="btn btn-primary">Učlani se</a>
-
-                  </div>
-                </section>
-
-        </article>
-     </main>
-
- 
+                </li>
+                
+                <li class="slider-item">
+                  <figure class="img-holder" style="--width: 575; --height: 550">
+                    <img src="./assets/hero-slide-1.jpg" width="575" height="550" alt="" class="img-cover hero-picture" />
+                  </figure>
+                </li>
+           
+                <li class="slider-item">
+                  <figure class="img-holder" style="--width: 575; --height: 550">
+                    <img src="./assets/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover hero-picture" />
+                  </figure>
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+        -->
+
+      <section class="about" aria-labelledby="about-label" id="about-section">
+        <div class="container">
+          <figure class="about-banner">
+            <img src="./assets/about-banner.png" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100" />
+          </figure>
+
+          <div class="about-content">
+            <p class="section-subtitle" id="about-label">O nama</p>
+
+            <h2 class="h2 section-title">
+              Ipsilon Srbija - Zajedno ka boljoj budućnosti.
+            </h2>
+
+            <ul>
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Osnovna Ideja</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Ipsilon Srbija je osnovana iz osnovne ideje da male
+                    promene mogu napraviti veliku razliku u našoj zajednici.
+                    Verujemo u moć edukacije i ličnog razvoja kao sredstva za
+                    ostvarivanje te promene.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Naša Misija</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Misija Ipsilon Srbija je podržati i edukovati svoje
+                    članove u svim aspektima ličnog razvoja. Verujemo da samo
+                    zajedno, kroz zajedničke napore, možemo stvoriti bolje i
+                    pravednije društvo.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Naša Vizija</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Ipsilon Srbija ima viziju stvaranja otvorenijeg i
+                    pravednijeg društva kroz podršku građanima i promovisanje
+                    pozitivnih promena. Smatramo da je svaka akcija važna u
+                    ostvarivanju te vizije.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                      <span class="span h5">Naši Ciljevi</span>
+                    </button>
+                  </h3>
+                  <p class="accordion-content">
+                    Glavni cilj Ipsilon Srbija je pružiti podršku građanima u
+                    njihovim nastojanjima za pozitivnim promenama. Radimo na
+                    promovisanju edukacije, aktivnog građanstva i stvaranju
+                    boljeg okruženja za sve.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                      <span class="span h5">Kako Radimo</span>
+                    </button>
+                  </h3>
+                  <p class="accordion-content">
+                    Radimo zajedno sa našim članovima i partnerima kako bismo
+                    ostvarili svoje ciljeve. Organizujemo obuke, seminare i
+                    događaje kako bismo pružili prilike za učenje i saradnju.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                      <span class="span h5">Zajednica</span>
+                    </button>
+                  </h3>
+                  <p class="accordion-content">
+                    Ipsilon Srbija je zajednica entuzijasta i pojedinaca koji
+                    dele istu strast za promenama. Verujemo da svaka osoba
+                    može doprineti boljoj budućnosti i otvorenijem društvu.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #SERVICE
+        -->
+
+      <section class="section service" aria-labelledby="service-label" id="service-section">
+        <div class="container">
+          <p class="section-subtitle" id="service-label">
+            Koji je naš doprinos zajednici?
+          </p>
+
+          <h2 class="h2 section-title">
+            Mi smo Ipsilon Srbija, posvećeni unapređenju zajednice kroz
+            obrazovanje i angažovanje građana.
+          </h2>
+
+          <ul class="grid-list">
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="book-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  Edukacija za lični razvoj i uspeh
+                </h3>
+
+                <p class="card-text">
+                  Nudimo obrazovanje koje vam pomaže u postizanju ličnog
+                  razvoja i uspeha. Saznajte više o našim programima.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Saznajte više</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="bulb-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  Inspiracija i mentorstvo za mlade
+                </h3>
+
+                <p class="card-text">
+                  Naši mentori pružaju inspiraciju i podršku kako mladima tako
+                  i iskusnima. Otkrijte kako vam možemo pomoći da ostvarite
+                  svoje ciljeve.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Saznajte više</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  Povezivanje ljudi za pravedno društvo
+                </h3>
+
+                <p class="card-text">
+                  Verujemo da povezivanje ljudi može da dovede do stvaranja
+                  pravednijeg društva. Saznajte kako možete biti deo
+                  pozitivnih promena.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Saznajte više</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  Podrška za pozitivne promene u zajednici
+                </h3>
+
+                <p class="card-text">
+                  Naša podrška ima za cilj da doprinese pozitivnim promenama u
+                  vašoj zajednici. Saznajte kako možemo zajedno unaprediti
+                  život u vašem okruženju.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Saznajte više</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #STATS
+        -->
+
+      <section class="stats" aria-label="our stats">
+        <div class="container">
+          <ul class="stats-card has-bg-image" style="background-image: url('./assets/stats-bg.jpg')">
+            <li>
+              <p class="card-text">
+                <span class="h1">25</span>
+
+                <spna class="span">Realizovanih projekata</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">3472</span>
+
+                <spna class="span">Srećnih korisnika</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">10</span>
+
+                <spna class="span">Zaposlenih eksperta</spna>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #PROJECT
+        -->
+
+      <section class="section project" aria-labelledby="project-label" id="project-section">
+        <div class="container">
+          <p class="section-subtitle" id="project-label">Projekti</p>
+
+          <h2 class="h2 section-title">
+            Pogledajte neke naše realizovane projekte
+          </h2>
+
+          <ul class="grid-list">
+            <li>
+              <div class="project-card">
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350">
+                  <img src="./assets/2.jpg" width="560" height="350" loading="lazy" alt="BEOKULTURA"
+                    class="img-cover" />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">BEOKULTURA</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Projekat ima za animiranje kreativnih ljudi i mladih
+                    stvaralaca za rad na razvoju kulture. Sajt afirmiše mlade
+                    stvaraoce iz svih oblasti umetnosti, koji do sada nisu
+                    imali šansu da predstave svoja dela i radove svetskoj
+                    javnosti. Projekat omogućava učešće i svim pojedincima
+                    koji na bilo koji način žele da daju doprinos razvoju
+                    kulture u Beogradu. Predstavljanje umetnika i drugih
+                    stvaralaca iz Beograda. Preko ovog sajta omogućićemo
+                    umetnicimai drugim stvaraocima raznih generacija da
+                    predstavesvoje stvaralaštvo putem interneta. To se odnosi
+                    nastvaraoce koji vode poreklo sa ovog područja iližive i
+                    stvaraju na području Beograda.
+                  </p>
+
+                  <a href="#" class="btn-text">
+                    <span class="span">Saznajte više</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-03-29">29 Mar 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Workspace</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350">
+                  <img src="./assets/4.jpg" width="560" height="350" loading="lazy" alt="Made in СРБИЈА"
+                    class="img-cover" />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Made in СРБИЈА</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Ovim projektom se promoviše celokupna i raznovrsna
+                    kulturna i umetnička delatnost, kao i njene tradicija i
+                    bogato nasljeđa. Promocija ovih sadržaja je u cilju
+                    očuvanja kulturne baštine kao prioritetne grane naše
+                    zemlje i prepoznavanje Srbije kao destinacije u kojoj su
+                    zastupljeni određeni vidovi kulturnog turizma kao oblika
+                    koji sedanas sve više traži i po čemu su već prepoznate
+                    određene svetske kulturne destinacije. Ovi ciljevi su
+                    definisani od samog početka realizacije projekta.
+                  </p>
+
+                  <a href="#" class="btn-text">
+                    <span class="span">Saznajte više</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-02-26">26 Feb 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Meeting</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350">
+                  <img src="./assets/1.jpg" width="560" height="350" loading="lazy" alt="Aktiviraj se, edukuj se!"
+                    class="img-cover" />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Aktiviraj se, edukuj se</a>
+                  </h3>
+
+                  <p class="card-text">
+                    U saradnji sa Kancelarijom za mlade Grada Beograda
+                    početkom 2023. godine sproveli smo edukativnu radionicu
+                    “Postani vršnjački edukator” iz kojeg je proisteklo
+                    Istraživanje ove, danas, jako popularne I aktuelne teme.
+                    <br /><br />
+                    Sprovođenjem mešovitih kvalitativnih metoda, edukativnih i
+                    kreativnih seminara, fokus grupa, konsultacija i dubinskih
+                    intervjua ispitivani su stavovi mladih iz srednjih škola i
+                    predstavnika lokalnih organizacija i institucija. Na
+                    osnovu ovog materijala pripremljene su preporuke za
+                    neposrednije uključivanje mladih u rad tela koje se bave
+                    prevencijom nasilja u obrazovnim ustanovama na lokalnom
+                    nivou i angažovanje odbornika na nivou njihovih izbornih
+                    baza.
+
+                    <br /><br />Samo istraživanje možete pogledati na linku:
+                  </p>
+
+                  <a href="#" class="btn-text">
+                    <span class="span">Saznajte više</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-04-14">14 Apr 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Coding</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350">
+                  <img src="./assets/3.jpg" width="560" height="350" loading="lazy"
+                    alt="Edukativna učionica dobre volje" class="img-cover" />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Edukativna učionica dobre volje</a>
+                  </h3>
+
+                  <p class="card-text">
+                    U saradnji sa Sekretarijatom za omladinu i sport Grada
+                    Beograda sproveli smo i, i dalje radimo na njemu, projekta
+                    pod nazivom „Edukativna učionica dobre volje” koji za
+                    glavni cilj ima edukaciju dece o važnosti aktivizma,
+                    socijalnom uključivanju, zdravim navikama, kao i jačanju
+                    kohezivnosti, stvaranje zdrave atmosfere u kojoj se
+                    negujebliskost i saradnja među učenicima bez nasilja,
+                    sačinjene za decu uzrasta od 14 godina,odnosno 80 učenika
+                    osnovnih školskih ustanova 8 razreda, kao i
+                    srednjoškolcima od 1-4razreda srednjo-školskog uzrasta od
+                    14 -18 godina.
+                  </p>
+
+                  <a href="#" class="btn-text">
+                    <span class="span">Saznajte više</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-02-26">26 Feb 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Meeting</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350">
+                  <img src="./assets/5.jpg" width="560" height="350" loading="lazy" alt="Solidarnost pre svega"
+                    class="img-cover" />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Solidarnost pre svega</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Projektom je osmišljeno sprovođenja treninga i radionica
+                    sa ciljem osnaživanja mladih da kao ambasadori
+                    solidarnosti prenesu stečena znanja svojim vršnjacima, a
+                    da zatim volonteri uz podršku omladinskihradnika kreiraju
+                    edukativne programe u koje uključuju i druge mlade a sve
+                    na temu solidarnosti i pozitivnog stava društva u celini
+                  </p>
+
+                  <a href="#" class="btn-text">
+                    <span class="span">Saznajte više</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-02-26">26 Feb 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Meeting</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #CONTACT US
+        -->
+
+      <section class="section contact" aria-labelledby="contact-us" id="contact-section">
+        <div class="container">
+          <p class="section-subtitle" id="contact-label">Kontakt</p>
+          <h2 class="h2 section-title">Kontaktirajte nas za dodatne informacije i pitanja</h2>
+          <div class="contacts">
+
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.9169830294713!2d20.451431577292972!3d44.80288047107089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7006dca9f67d%3A0xc5c875d7b0b8bdb6!2z0KHQsNGA0LDRmNC10LLRgdC60LAgMzg!5e0!3m2!1ssr!2srs!4v1694452892644!5m2!1ssr!2srs"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="form">
+              <h1>Kontaktirajte nas</h1>
+              <form action="#">
+                <div class="input-container">
+                  <input type="text" class="input" name="name">
+                  <label for="">Ime i prezime</label>
+                  <span>Ime i Prezime</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" class="input" name="email">
+                  <label for="">Email</label>
+                  <span>Email</span>
+                </div>
+                <div class="input-container">
+                  <textarea name="message" class="input"></textarea>
+                  <label class="label-poruka" for="">Poruka</label>
+                  <span class="span-poruka">Poruka</span>
+                </div>
+                <button type="submit" class="btn">Pošalji</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 
+        - #CTA
+        -->
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+          <h2 class="h2 section-title">Postanite deo Ipsilon tima</h2>
+
+          <a href="#" class="btn btn-primary">Učlani se</a>
+        </div>
+      </section>
+
+    </article>
+  </main>
 
   <!-- 
     - #FOOTER
@@ -734,19 +774,17 @@
 
   <footer class="footer">
     <div class="container grid-list">
-
       <div class="footer-brand">
-
         <a href="#" class="logo">
-          <img src="./assets/logo_white.png" width="120" height="60" alt="IpsilonSrbija">
+          <img src="./assets/logo_white.png" width="120" height="60" alt="IpsilonSrbija" />
         </a>
 
         <p class="footer-text">
-          &copy; 2023 WLQ Innovations. <br> All rights reserved.
+          &copy; 2023 WLQ Innovations. <br />
+          All rights reserved.
         </p>
 
         <ul class="social-list">
-
           <li>
             <a href="https://www.facebook.com/ipsilonsrbija" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
@@ -758,13 +796,10 @@
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
-
         </ul>
-
       </div>
 
       <ul class="footer-list">
-
         <li>
           <p class="h4 footer-list-title">Kontaktirajte nas</p>
         </li>
@@ -782,11 +817,9 @@
         <!-- <li>
           <a href="tel:001234567890" class="footer-link">00 (123) 456 78 90</a>
         </li> -->
-
       </ul>
 
       <ul class="footer-list">
-
         <li>
           <p class="h4 footer-list-title">Saznaj više</p>
         </li>
@@ -806,11 +839,9 @@
         <li>
           <a href="#" class="footer-link">Politika privatnosti</a>
         </li>
-
       </ul>
 
       <div class="footer-list">
-
         <p class="h4 footer-list-title">Naš bilten</p>
 
         <p class="footer-text">
@@ -818,23 +849,20 @@
         </p>
 
         <form action="" class="input-wrapper">
-          <input type="email" name="email_address" placeholder="Email Adresa" required class="input-field">
+          <input type="email" name="email_address" placeholder="Email Adresa" required class="input-field" />
 
           <button type="submit" class="submit-btn">Pošalji</button>
         </form>
-
       </div>
-
     </div>
   </footer>
 
+  <!-- custom js link -->
+  <script src="./code.js"></script>
 
-
-    <!-- custom js link -->
-    <script src="./code.js"></script>
-
-    <!-- ionicon -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- ionicon -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
