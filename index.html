@@ -729,14 +729,14 @@
 
             <div class="form">
               <h1>Kontaktirajte nas</h1>
-              <form action="#">
+              <form action="https://formsubmit.co/ipsilonsrbija@gmail.com" method="POST">
                 <div class="input-container">
-                  <input type="text" class="input" name="name">
+                  <input type="text" class="input" name="name" required>
                   <label for="">Ime i prezime</label>
                   <span>Ime i Prezime</span>
                 </div>
                 <div class="input-container">
-                  <input type="text" class="input" name="email">
+                  <input type="email" class="input" name="email" required>
                   <label for="">Email</label>
                   <span>Email</span>
                 </div>
@@ -746,6 +746,10 @@
                   <span class="span-poruka">Poruka</span>
                 </div>
                 <button type="submit" class="btn">Pošalji</button>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse" value="Hvala Vam na poruci. Odgovorićemo Vam u najkraćem mogućem roku. Srdačan pozdrav Ipsilion tim.">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://yourdomain.co/https://osmestrasmesnica.github.io/IPSILONWLQ/">
               </form>
             </div>
           </div>
