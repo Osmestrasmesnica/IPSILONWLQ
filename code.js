@@ -235,3 +235,44 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
+
+
+// Function to hide the contact section
+function hideContactSection() {
+  const contactSection = document.querySelector('form');
+  if (contactSection) {
+    contactSection.style.display = 'none';
+  }
+}
+
+// Function to show the contact section
+function showContactSection() {
+  const contactSection = document.querySelector('form');
+  if (contactSection) {
+    contactSection.style.display = 'block'; // You can use 'block' or 'flex' depending on your CSS styles.
+  }
+}
+
+// Add event listener to the button with class "nav-open-btn"
+const navOpenBtn = document.querySelector('.nav-open-btn');
+if (navOpenBtn) {
+  navOpenBtn.addEventListener('click', function() {
+    const navbar = document.querySelector(".navbar");
+    if (navbar.classList.contains("active")) {
+      hideContactSection();
+    } else {
+      showContactSection();
+    }
+  });
+}
+
+// Event listener for when the navbar is no longer active
+document.body.addEventListener('click', function(event) {
+  const navbar = document.querySelector(".navbar");
+  const contactSection = document.getElementById('form');
+  
+  // Check if the navbar contains the "active" class
+  if (!navbar.classList.contains("active")) {
+    showContactSection();
+  }
+});
