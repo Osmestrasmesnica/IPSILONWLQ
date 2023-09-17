@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beokultura</title>
+    <meta name="title" content="Beokultura" />
+    <meta name="description"
+        content="This project was executed by the NGO IpsilonSrbija, and the website was created by WLQ Innovations" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/asd.png" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="beokultura.css" />
+
+    <!-- preload images -->
+    <!-- <link rel="preload" as="image" href="...">
+    <link rel="preload" as="image" href="..."> -->
+</head>
+
+<body>
+
+    <!-- #HEADER -->
+    <header class="header" data-header>
+        <div class="container">
+            <a href="" class="logo">
+                <p class="logo-text"> BEOKULTURA </p>
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <div class="navbar-top">
+                    <a href="#" class="logo">
+                        <img src="./assets/logo_white.png" width="120" height="60" alt="IpsilonSrbija" />
+                    </a>
+
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+                    <li>
+                        <a href="#about-section" class="navbar-link">O nama</a>
+                    </li>
+                    <li>
+                        <a href="#service-section" class="navbar-link">Sta radimo</a>
+                    </li>
+                    <li>
+                        <a href="#project-section" class="navbar-link">Projekti</a>
+                    </li>
+                    <li>
+                        <a href="#contact-section" class="navbar-link">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="#social-section" class="navbar-link">Vesti/Blog?</a>
+                    </li>
+                </ul>
+
+                <div class="wrapper">
+                    <a href="mailto:ipsilonsrbija@gmail.com" class="contact-link">ipsilonsrbija@gmail.com</a>
+                    <!-- <a href="tel:064123456789" class="contact-link">06x/1234-56789</a> -->
+                </div>
+
+                <ul class="social-list">
+                    <li>
+                        <a href="https://www.instagram.com/ipsilonsrbija" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/ipsilonsrbija" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+    </header>
+
+
+    <main>
+        <article>
+            <!-- #HERO -->
+
+            <section class="section hero has-bg-image" aria-label="home" style="background-image: url('./assets/hero-bg.jpg')">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="h1 hero-title">Zajedno gradimo svetlu budućnosti</h1>
+
+                        <p class="hero-text">
+                            Kroz zajednički inspiraciju, trud i rad, stvaramo svetlu
+                            budućnost.
+                        </p>
+
+                        <div class="btn-wrapper">
+                            <a href="#project-section" class="btn btn-primary">Projekti</a>
+
+                            <a href="#contact-section" class="btn btn-outline">Kontakt</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-slider" data-slider>
+                        <div class="slider-inner">
+                            <ul class="slider-container" data-slider-container>
+
+
+                                <li class="slider-item">
+                                    <figure class="img-holder" style="--width: 575; --height: 550">
+                                        <img src="./assets/hero-slide-4.jpg" width="575" height="550" alt=""
+                                            class="img-cover hero-picture" />
+                                    </figure>
+                                </li>
+
+                                <li class="slider-item">
+                                    <figure class="img-holder" style="--width: 575; --height: 550">
+                                        <img src="./assets/hero-slide-5.jpg" width="575" height="550" alt=""
+                                            class="img-cover hero-picture" />
+                                    </figure>
+                                </li>
+
+                                <li class="slider-item">
+                                    <div class="hero-card">
+                                        <figure class="img-holder" style="--width: 575; --height: 550">
+                                            <img src="./assets/hero-slide-2.jpg" width="575" height="550"
+                                                alt="hero banner" class="img-cover hero-picture" />
+                                        </figure>
+
+                                        <button class="play-btn" aria-label="play adex intro">
+                                            <ion-icon name="play" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </div>
+                                </li>
+
+                                <li class="slider-item">
+                                    <figure class="img-holder" style="--width: 575; --height: 550">
+                                        <img src="./assets/hero-slide-1.jpg" width="575" height="550" alt=""
+                                            class="img-cover hero-picture" />
+                                    </figure>
+                                </li>
+
+                                <li class="slider-item">
+                                    <figure class="img-holder" style="--width: 575; --height: 550">
+                                        <img src="./assets/hero-slide-3.jpg" width="575" height="550" alt=""
+                                            class="img-cover hero-picture" />
+                                    </figure>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+                            <ion-icon name="arrow-back"></ion-icon>
+                        </button>
+
+                        <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+                            <ion-icon name="arrow-forward"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- #BG -->
+            <section class="section" aria-label="bg">
+                <div class="container bg"></div>
+            </section>
+
+            <!-- #CONTACT US -->
+
+            <section class="section contact" aria-labelledby="contact-us" id="contact-section">
+                <div class="container">
+                    <p class="section-subtitle" id="contact-label">Kontakt</p>
+                    <h2 class="h2 section-title">Kontaktirajte nas za dodatne informacije i pitanja</h2>
+                    <div class="contacts">
+
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.9169830294713!2d20.451431577292972!3d44.80288047107089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7006dca9f67d%3A0xc5c875d7b0b8bdb6!2z0KHQsNGA0LDRmNC10LLRgdC60LAgMzg!5e0!3m2!1ssr!2srs!4v1694452892644!5m2!1ssr!2srs"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="form">
+                            <h1>Kontaktirajte nas</h1>
+                            <form action="https://formsubmit.co/ipsilonsrbija@gmail.com" method="POST">
+                                <div class="input-container">
+                                    <input type="text" class="input" name="name" required>
+                                    <label for="">Ime i prezime</label>
+                                    <span>Ime i Prezime</span>
+                                </div>
+                                <div class="input-container">
+                                    <input type="email" class="input" name="email" required>
+                                    <label for="">Email</label>
+                                    <span>Email</span>
+                                </div>
+                                <div class="input-container">
+                                    <textarea name="message" class="input"></textarea>
+                                    <label class="label-poruka" for="">Poruka</label>
+                                    <span class="span-poruka">Poruka</span>
+                                </div>
+                                <button type="submit" class="btn">Pošalji</button>
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_autoresponse"
+                                    value="Hvala Vam na poruci. Odgovorićemo Vam u najkraćem mogućem roku. Srdačan pozdrav Ipsilion tim.">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_next"
+                                    value="https://yourdomain.co/https://osmestrasmesnica.github.io/IPSILONWLQ/">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </article>
+    </main>
+
+    <!-- #FOOTER   -->
+    <footer class="footer">
+        <div class="container grid-list">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="./assets/logo_white.png" width="120" height="60" alt="IpsilonSrbija" />
+                </a>
+
+                <p class="footer-text">
+                    <a href="mailto:wlqinnovations@gmail.com" class="footer-link">
+                        &copy; 2023 WLQ Innovations.</a>
+                    All rights reserved.
+                </p>
+
+                <ul class="social-list">
+                    <li>
+                        <a href="https://www.facebook.com/ipsilonsrbija" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/ipsilonsrbija" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <p class="h4 footer-list-title">Kontaktirajte nas</p>
+                </li>
+
+                <li>
+                    <address class="footer-text">
+                        Sarajevska 38, Beograd, Srbija
+                    </address>
+                </li>
+
+                <li>
+                    <a href="mailto:ipsilonsrbija@gmail.com" class="footer-link">ipsilonsrbija@gmail.com</a>
+                </li>
+
+                <!-- <li>
+            <a href="tel:001234567890" class="footer-link">00 (123) 456 78 90</a>
+            </li> -->
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <p class="h4 footer-list-title">Saznaj više</p>
+                </li>
+
+                <li>
+                    <a href="#about-section" class="footer-link">O nama</a>
+                </li>
+
+                <li>
+                    <a href="#project-section" class="footer-link">Projekti</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Uslovi korišćenja</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Politika privatnosti</a>
+                </li>
+            </ul>
+
+            <div class="footer-list">
+                <p class="h4 footer-list-title">Naš bilten</p>
+
+                <p class="footer-text">
+                    Pretplatite se na naš bilten kako biste primili naše vesti i ponude.
+                </p>
+
+                <form action="" class="input-wrapper">
+                    <input type="email" name="email_address" placeholder="Email Adresa" required class="input-field" />
+
+                    <button type="submit" class="submit-btn">Pošalji</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- custom js link -->
+    <script src="./code.js"></script>
+
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

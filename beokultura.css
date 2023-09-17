@@ -1,0 +1,207 @@
+
+:root {
+    /*
+    * colors
+    */
+  
+    --violet-blue-crayola: hsla(234, 50%, 64%, 1);
+    --dark-cornflower-blue_a7: hsla(214, 88%, 27%, 0.07);
+    --white: hsla(0, 0%, 100%, 1);
+    --white_a3: hsla(0, 0%, 100%, 0.03);
+    --white_a8: hsla(0, 0%, 100%, 0.08);
+    --white_a12: hsla(0, 0%, 100%, 0.12);
+    --white_a70: hsla(0, 0%, 100%, 0.7);
+    --cultured: hsla(220, 20%, 97%, 1);
+    --lavender-web: hsla(233, 52%, 94%, 1);
+    --cadet-blue-crayola: hsla(220, 12%, 70%, 1);
+    --cadet-blue-crayola_a20: hsla(222, 23%, 71%, 0.2);
+    --charcoal: hsla(218, 22%, 26%, 1);
+    --raisin-black: hsla(216, 14%, 14%, 1);
+    --light-gray: hsla(0, 0%, 79%, 1);
+    --blue-crayola: hsla(219, 72%, 56%, 1);
+    --black-coral: hsla(220, 12%, 43%, 1);
+    --maximum-yellow-red_a10: hsla(41, 99%, 64%, 0.1);
+    --maximum-yellow-red_a40: hsla(41, 99%, 64%, 0.4);
+    --maximum-yellow-red: hsl(41, 99%, 64%);
+    --orange-red_a20: hsla(19, 100%, 55%, 0.2);
+    --eerie-black: hsl(210, 11%, 15%);
+    --orange-red: hsl(19, 100%, 55%);
+    --davys-gray: hsl(0, 0%, 33%);
+    --light-gray: hsl(0, 0%, 80%);
+    --white_a80: hsla(0, 0%, 100%, 0.8);
+    --white_a75: hsla(0, 0%, 100%, 0.75);
+    --white_a10: hsla(0, 0%, 100%, 0.1);
+    --jet_a10: hsla(0, 0%, 22%, 0.1);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --jet: hsl(0, 0%, 22%);
+  
+    /*
+    * typography
+    */
+  
+    --ff-jost: 'Jost', sans-serif;
+    --ff-manrope: 'Manrope', sans-serif;
+  
+    --fs-45: 4.5rem;
+    --fs-38: 3.8rem;
+    --fs-32: 3.2rem;
+    --fs-27: 2.7rem;
+    --fs-26: 2.6rem;
+    --fs-22: 2.2rem;
+    --fs-20: 2rem;
+    --fs-18: 1.8rem;
+    --fs-17: 1.7rem;
+    --fs-14: 1.4rem;
+    --fs-12: 1.2rem;
+    --fs-1: calc(2.7rem + 1.38vw);
+    --fs-2: calc(2.6rem + .66vw);
+    --fs-3: 2.2rem;
+    --fs-4: 1.9rem;
+    --fs-5: 1.8rem;
+    --fs-6: 1.7rem;
+    --fs-7: 1.5rem;
+    --fs-8: 1.4rem;
+  
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+  
+    /*
+    * spacing
+    */
+  
+    --section-padding: 90px;
+  
+    /*
+    * box shadow
+    */
+  
+    --shadow: 0 2px 2px hsla(0, 0%, 22%, 0.08);
+    --shadow-1: 0 0 20px hsla(216, 14%, 14%, 0.05);
+    --shadow-2: 0 0 0 0.05rem hsla(214, 88%, 27%, 0.08), 0 0 1.25rem hsla(216, 14%, 14%, 0.06);
+    --shadow-3: 0 0 1.25rem hsla(216, 14%, 14%, 0.04);
+  
+    /*
+    * border radius
+    */
+  
+    --radius-50: 50px;
+    --radius-circle: 50%;
+    --radius-pill: 100px;
+    --radius-10: 10px;
+    --radius-8: 8px;
+    --radius-6: 6px;
+  
+    /*
+    * transition
+    */
+  
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+    --transition-3: 0.3s ease-in-out;
+    --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
+  }
+  
+  
+  
+  /*-----------------------------------*\
+    #RESET
+  \*-----------------------------------*/
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li { list-style: none;}
+  
+  a,
+  img,
+  span,
+  input,
+  button,
+  ion-icon { display: block;}
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  img { height: auto;}
+  
+  input,
+  button {
+    background: none;
+    border: none;
+    font: inherit;
+  }
+  
+  input {width: 100%;}
+  
+  button {cursor: pointer;}
+  
+  ion-icon {pointer-events: none;}
+  
+  address {font-style: normal;}
+  
+  html {
+    font-family: var(--ff-jost);
+    font-size: 10px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+  }
+  
+  body {
+    background-color: var(--white_a80);
+    /* background-image: url(./assets/bg1.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--davys-gray);
+    font-size: 1.6rem;
+    line-height: 1.7;
+    /* height: 300vh; */
+  }
+  
+  body.nav-active {overflow: hidden;}
+  
+  ::-webkit-scrollbar {width: 10px;}
+  
+  ::-webkit-scrollbar-track {background-color: hsl(0, 0%, 98%);}
+  
+  ::-webkit-scrollbar-thumb {background-color: hsl(0, 0%, 80%);}
+  
+  ::-webkit-scrollbar-thumb:hover {background-color: hsl(0, 0%, 70%);}
+
+/* DODATAN FORMATING ZA NOVU STRANICU */
+
+.logo-text {
+    color: var(--white);
+    font-size: var(--fs-26);
+    font-weight: var(--fw-700);
+}
+
+.container.bg {
+    background-image: url(assets/Beokultura/bg.jpg);
+    /* background-image: url(assets/Beokultura/BG-silueta.png); */
+    /* background-image: url(assets/Beokultura/BelgradeCover.png); */
+    width: 100%;
+    height: 500px;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+@media (max-width: 643px) {
+    .container.bg {
+        background-image: url(assets/Beokultura/bg.jpg);
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    } 
+}
