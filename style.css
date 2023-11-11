@@ -646,7 +646,10 @@ body.nav-active {overflow: hidden;}
   #PROJECT
 \*-----------------------------------*/
 
-.project { background-color: var(--cultured); }
+.project { 
+  padding-bottom: 0;
+  background-color: var(--cultured); 
+}
 
 .project :is(.section-subtitle, .section-title) { text-align: center; }
 
@@ -1358,10 +1361,6 @@ iframe{
 
 .a-blog{
   display: inline;
-}
-
-.section.project{
-  padding-bottom: 1rem;
 }
 
 .blog .card-meta-item {
