@@ -1355,3 +1355,20 @@ iframe{
   }
 
 }
+
+.a-blog{
+  display: inline;
+}
+
+.project{
+  padding-bottom: 0;
+}
+
+.blog .card-meta-item {
+  display: flex;
+  margin-top: 0.5rem;
+  }
+
+.blog .card-meta-list {
+  justify-content: space-around;
+}
