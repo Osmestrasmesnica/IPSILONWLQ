@@ -1360,8 +1360,8 @@ iframe{
   display: inline;
 }
 
-.project{
-  padding-bottom: 0;
+.section.project{
+  padding-bottom: 1rem;
 }
 
 .blog .card-meta-item {
