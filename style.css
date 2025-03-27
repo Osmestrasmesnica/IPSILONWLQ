@@ -588,7 +588,7 @@ body.nav-active {overflow: hidden;}
 
 
 .about .container {
-  padding-top: 10rem;
+  padding-top: 6rem;
   display: grid;
   gap: 50px;
 }

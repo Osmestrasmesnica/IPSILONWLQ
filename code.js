@@ -48,10 +48,10 @@ const header = document.querySelector("[data-header]");
 window.addEventListener("scroll", function () {
   if (window.scrollY > 100) {
     header.classList.add("active");
-    document.getElementById('logo-heder').src="./assets/logo.png"
+    document.getElementById('logo-heder').src="./assets/new-design/logo/logo-1-removebg-preview.png"
   } else {
     header.classList.remove("active");
-    document.getElementById('logo-heder').src="./assets/logo_white.png"
+    document.getElementById('logo-heder').src="./assets/new-design/logo/logo-2-removebg-preview.png"
   }
 });
 
